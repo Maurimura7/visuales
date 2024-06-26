@@ -1,9 +1,5 @@
 [workspace]
-members = [
-    "le_parc",
-    "tame_impala",
-    "utils"
-]
+members = ["le_parc", "tame_impala", "utils"]
+exclude = ["bevy"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-resolver="2"
+resolver = "2" # Important! wgpu/Bevy needs this!
