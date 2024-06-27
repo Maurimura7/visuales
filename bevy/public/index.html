@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<body style="margin: 0px;">
+  <main style="width: 100dvw; height: 100dvh;display: flex;justify-content: center;align-items: center;background: #2b2c2f;">
+    <canvas id="bevy-canvas" width="1280" height="720"></canvas>
+  </main>
+
+  
+  <script type="module">
+    import init from './bevy.js'
+
+    init().catch((error) => {
+      if (!error.message.startsWith("Using exceptions for control flow, don't mind me. This isn't actually an error!")) {
+        throw error;
+      }
+    });
+  </script>
+</body>
+
+</html>
